@@ -1,0 +1,181 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 0.3em;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 0.125em solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-size: 0.75em;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 1.75em;
+    font-weight: 700px;
+    text-indent: 1em;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* a ordem segue:margem no topo, margem a direita, margem abaixo, margem a esquerda. Assim como um relógio. */
+}
+
+.container__caixa {
+    margin: 0 6em; /* 0 = topo e baixo, 6em = esquerda e direita. Essa é uma forma de colocar margem com dois valores. */
+}
+
+.secundario__imagem {
+    width: 80%;     
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700px;
+    font-size: 3em;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    font-size: 1em;
+}
+
+.secundario__botao {
+    display: inline-block; /*transforma o elemento em linha,quebra linha do texto*/
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex; /*transforma a lista em flex container e os elementos filhos em flex itens (Row por padrão)*/
+    justify-content: center;
+    list-style-type: none; /* tirar os pontinhos padrões da lista ul */
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center; /*pega todos os elementos e centraliza*/
+}
+
+.dispositivos__titulo {
+    font-size: 3em;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+}
+
+.rodape__logo{
+    margin: 0em 0em 2em 0em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+
+
+}
+
+.lista__link{
+    margin: 0em 2.5em; /* espaçar os links para nao ficarem grudados*/
+
+
+}
+
+.rodape__link{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto{
+    font-size: 0.9em;
+    font-weight: 400px; 
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: var(--fonte-principal);
+    color: var(--cinza-secundario);
+}
+
+.rodape__creditos{
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    padding: 1em;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400px;   
+}
+
+.lista__link a:hover { /* hover (muda cor de links clicaveis) para todos os elementos das ancoras */
+    color: var(--botao-azul);
+}
+
+.lista__link a:active { /* cor depois do click no link */
+    color: #E1ADA3;
+}
+
+.container__botao:hover{ /* hover sao pseudoclasses do css, active também, o visit que deixa o item como clicado */
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
